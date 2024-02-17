@@ -20,13 +20,7 @@ def main():
         bot_response = chatbot(corrected_user_input)
         st.success(f"Bot's Response: {bot_response}")
 
-    # Sidebar for search functionality
-    #search_query = st.text_input("Enter your search query:")
-    #corrected_query = spell(search_query)
-
-    # Button to trigger the search correction
-    #if st.button("Search"):
-        #st.success(f"Corrected Query: {corrected_query}")
+   
 
 if __name__ == "__main__":
     main()
