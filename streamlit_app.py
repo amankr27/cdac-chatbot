@@ -33,7 +33,7 @@ def main():
         st.session_state.bot_responses.append(bot_response)
 
     # Display previous conversations within the session
-    st.write("**---------------------------------------------**")
+    st.write("**Previous Conversations in this Session:**")
     for i, (user_input, bot_response) in enumerate(zip(st.session_state.user_inputs, st.session_state.bot_responses), 1):
         st.write(f"{i}. **User Input:** {user_input}")
         st.write(f"   **Bot Response:** {bot_response}")
