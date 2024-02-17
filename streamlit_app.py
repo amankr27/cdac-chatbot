@@ -3,6 +3,7 @@ from autocorrect import Speller
 from chat import chatbot  # Assuming you have a chatbot function in chat.py
 import nltk
 nltk.download('punkt')
+nltk.download('wordnet')
 nltk.download('stopwords')
 # Initialize the Speller from autocorrect
 spell = Speller()
