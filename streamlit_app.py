@@ -40,9 +40,9 @@ def main():
 
     # Display previous conversations within the session
     st.write("**Previous Conversations in this Session:**")
-    for i, (user_input, bot_response) in enumerate(zip(st.session_state.user_inputs, st.session_state.bot_responses), 1):
-        st.write(f"{i}. **👤:** {user_input}")
-        st.write(f"   **🤖:** {bot_response}")
+    for user_input, bot_response in zip(st.session_state.user_inputs, st.session_state.bot_responses):
+        st.write(f"**👤:** {user_input}")
+        st.write(f"**🤖:** {bot_response}")
 
 if __name__ == "__main__":
     main()
