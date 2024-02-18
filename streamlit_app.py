@@ -32,7 +32,7 @@ def main():
     # Button to trigger the chatbot response
     if st.button("Ask"):
         bot_response = chatbot(corrected_user_input)
-        st.success(f"Bot: {bot_response}")
+        st.success(f"🤖: {bot_response}")
 
         # Add the current conversation to the list of previous conversations within the session
         st.session_state.user_inputs.append(corrected_user_input)
