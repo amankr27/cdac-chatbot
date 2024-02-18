@@ -1,5 +1,5 @@
 import streamlit as st
-from spellchecker import spellchecker
+from spellchecker import Spellchecker
 from chat import chatbot  # Assuming you have a chatbot function in chat.py
 import nltk
 
@@ -14,7 +14,7 @@ nltk.download('wordnet')
 nltk.download('stopwords')
 
 # Initialize the Speller from autocorrect
-spell = spellchecker()
+spell = Spellchecker()
 
 def main():
     st.title("CDAC-Assistant")
