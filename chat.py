@@ -5,7 +5,7 @@ import pandas as pd
 def chatbot(input_text):
     # First try to get a response from the QASystem
     # Initialize the QASystem
-    qa = QASystem('test.csv')
+    qa = QASystem('test2.csv')
 
     try:
         qa_response = qa.get_response(input_text)
